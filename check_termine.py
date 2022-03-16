@@ -58,9 +58,14 @@ def check_buchbare_termine(url, months=[]):
             dates_notbookable = table.find_all("td", class_="nichtbuchbar")
             dates_bookable = table.find_all("td", class_="buchbar")
             logging.debug(f"Total number of dates in {month.text}: {len(dates)}")
-            logging.debug(
-                f"Number of bookable dates in {month.text}: {len(dates_bookable)}"
-            )
+            if len(dates_bookable) > 0:
+                logging.debug(
+                    f"Number of bookable dates in {month.text}: __{len(dates_bookable)__}"
+                )
+            else:
+                logging.debug(
+                    f"Number of bookable dates in {month.text}: {len(dates_bookable)}"
+                )
             logging.debug(
                 f"Number of not bookable dates in {month.text}: {len(dates_notbookable)}"
             )
@@ -68,11 +73,11 @@ def check_buchbare_termine(url, months=[]):
 
 
 if __name__ == "__main__":
-    logging.info("-" * 20 + "Started running script!")
+    logging.debug("-" * 20 + "Started running script!")
     url = "https://service.berlin.de/terminvereinbarung/termin/tag.php?id=3061&anliegen[]=120691#&termin=1&dienstleister=327437&anliegen[]=120691&herkunft=1"
     months = []
 
     while url != "https://service.berlin.de":
         months, url = check_buchbare_termine(url, months)
         url = "https://service.berlin.de" + url
-    logging.info("-" * 20 + "Finished running script!")
+    logging.debug("-" * 20 + "Finished running script!")
