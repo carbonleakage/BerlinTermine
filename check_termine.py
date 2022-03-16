@@ -60,7 +60,7 @@ def check_buchbare_termine(url, months=[]):
             logging.debug(f"Total number of dates in {month.text}: {len(dates)}")
             if len(dates_bookable) > 0:
                 logging.debug(
-                    f"Number of bookable dates in {month.text}: __{len(dates_bookable)__}"
+                    f"Number of bookable dates in {month.text}: __{len(dates_bookable)}__"
                 )
             else:
                 logging.debug(
