@@ -36578,3 +36578,23 @@
 2022-05-19 09:33:05,615 --- Connect to url: https://service.berlin.de/terminvereinbarung/termin/day/1654034400/
 2022-05-19 09:33:05,615 --- Successfully retrieved page!
 2022-05-19 09:33:05,635 --- --------------------Finished running script!
+2022-05-19 09:46:57,609 --- --------------------Started running script!
+2022-05-19 09:46:57,612 --- Starting new HTTPS connection (1): service.berlin.de:443
+2022-05-19 09:46:58,110 --- https://service.berlin.de:443 "GET /terminvereinbarung/termin/tag.php?id=3061&anliegen%5B%5D=120691 HTTP/1.1" 302 0
+2022-05-19 09:46:58,318 --- https://service.berlin.de:443 "GET /terminvereinbarung/termin/day/ HTTP/1.1" 200 None
+2022-05-19 09:46:58,321 --- Connect to url: https://service.berlin.de/terminvereinbarung/termin/tag.php?id=3061&anliegen[]=120691#&termin=1&dienstleister=327437&anliegen[]=120691&herkunft=1
+2022-05-19 09:46:58,322 --- Successfully retrieved page!
+2022-05-19 09:46:58,389 --- Found calendar month Mai 2022 in Termin webpage
+2022-05-19 09:46:58,390 --- Total number of dates in Mai 2022: 33
+2022-05-19 09:46:58,390 --- Number of bookable dates in Mai 2022: 0
+2022-05-19 09:46:58,390 --- Number of not bookable dates in Mai 2022: 8
+2022-05-19 09:46:58,390 --- Found calendar month Juni 2022 in Termin webpage
+2022-05-19 09:46:58,391 --- Total number of dates in Juni 2022: 32
+2022-05-19 09:46:58,391 --- Number of bookable dates in Juni 2022: 0
+2022-05-19 09:46:58,391 --- Number of not bookable dates in Juni 2022: 17
+2022-05-19 09:46:58,393 --- Starting new HTTPS connection (1): service.berlin.de:443
+2022-05-19 09:46:58,731 --- https://service.berlin.de:443 "GET /terminvereinbarung/termin/day/1654034400/ HTTP/1.1" 302 0
+2022-05-19 09:46:58,903 --- https://service.berlin.de:443 "GET /terminvereinbarung/termin/stop/ HTTP/1.1" 200 None
+2022-05-19 09:46:58,905 --- Connect to url: https://service.berlin.de/terminvereinbarung/termin/day/1654034400/
+2022-05-19 09:46:58,905 --- Successfully retrieved page!
+2022-05-19 09:46:58,928 --- --------------------Finished running script!
