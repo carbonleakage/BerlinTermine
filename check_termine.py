@@ -49,7 +49,12 @@ if __name__ == "__main__":
         termine = page.termine
     
     for month, termine_type in termine:
-        logging.info(
-            f"Numer of {termine_type} dates in {month}: {termine[month, termine_type]}"
-        )
+        if termine_type == "bookable" and termine[month, termine_type] > 0:
+            logging.warning(
+                f"Numer of {termine_type} dates in {month}: {termine[month, termine_type]}"
+            )
+        else:
+            logging.info(
+                f"Numer of {termine_type} dates in {month}: {termine[month, termine_type]}"
+            )
     logging.info("Finished running script!") 
