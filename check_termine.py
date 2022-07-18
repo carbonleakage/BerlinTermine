@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(
     filename="check_anmeldung_termine.log",
     level=logging.INFO,
-    format="%(asctime)s --- %(message)s",
+    format="%(asctime)s --- %(levelname)s: %(message)s",
     encoding="latin",
 )
 
