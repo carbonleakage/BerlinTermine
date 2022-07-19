@@ -36,25 +36,26 @@ class TerminePage():
 if __name__ == "__main__":
     # Verpflictungserklärung
     # url = "https://service.berlin.de/terminvereinbarung/termin/tag.php?id=3061&anliegen[]=120691#&termin=1&dienstleister=327437&anliegen[]=120691&herkunft=1"
+    url_options = [122276, 327324, 122274, 327326]
+    for url_option in url_options:
+        logging.info("Started running script!") 
+        url = f"https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister={url_option}&anliegen[]=120686&herkunft=1"
+        termine = dict()
 
-    logging.info("Started running script!") 
-    url = "https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister=122276&anliegen[]=120686&herkunft=1"
-    termine = dict()
-
-    while url != "https://service.berlin.de":
-        logging.info(f"Checking appointments in {url}") 
-        page = TerminePage(url, termine)
-        page.count_frei_termine()
-        url = page.next_page
-        termine = page.termine
-    
-    for month, termine_type in termine:
-        if termine_type == "bookable" and termine[month, termine_type] > 0:
-            logging.warning(
-                f"Numer of {termine_type} dates in {month}: {termine[month, termine_type]}"
-            )
-        else:
-            logging.info(
-                f"Numer of {termine_type} dates in {month}: {termine[month, termine_type]}"
-            )
-    logging.info("Finished running script!") 
+        while url != "https://service.berlin.de":
+            logging.info(f"Checking appointments in {url}") 
+            page = TerminePage(url, termine)
+            page.count_frei_termine()
+            url = page.next_page
+            termine = page.termine
+        
+        for month, termine_type in termine:
+            if termine_type == "bookable" and termine[month, termine_type] > 0:
+                logging.warning(
+                    f"Numer of {termine_type} dates in {month}: {termine[month, termine_type]}"
+                )
+            else:
+                logging.info(
+                    f"Numer of {termine_type} dates in {month}: {termine[month, termine_type]}"
+                )
+        logging.info("Finished running script!") 
