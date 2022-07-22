@@ -7414,3 +7414,35 @@
 2022-07-22 08:41:24,122 --- INFO: Numer of bookable dates in August 2022: 0
 2022-07-22 08:41:24,122 --- INFO: Numer of not-available dates in August 2022: 23
 2022-07-22 08:41:24,122 --- INFO: Finished running script!
+2022-07-22 09:08:44,971 --- INFO: Started running script!
+2022-07-22 09:08:44,971 --- INFO: Checking appointments in https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister=122276&anliegen[]=120686&herkunft=1
+2022-07-22 09:08:46,071 --- INFO: Checking appointments in https://service.berlin.de/terminvereinbarung/termin/day/1659304800/
+2022-07-22 09:08:46,866 --- INFO: Numer of bookable dates in Juli 2022: 0
+2022-07-22 09:08:46,866 --- INFO: Numer of not-available dates in Juli 2022: 6
+2022-07-22 09:08:46,866 --- INFO: Numer of bookable dates in August 2022: 0
+2022-07-22 09:08:46,866 --- INFO: Numer of not-available dates in August 2022: 23
+2022-07-22 09:08:46,866 --- INFO: Finished running script!
+2022-07-22 09:08:46,866 --- INFO: Started running script!
+2022-07-22 09:08:46,866 --- INFO: Checking appointments in https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister=327324&anliegen[]=120686&herkunft=1
+2022-07-22 09:08:47,784 --- INFO: Checking appointments in https://service.berlin.de/terminvereinbarung/termin/day/1659304800/
+2022-07-22 09:08:48,550 --- INFO: Numer of bookable dates in Juli 2022: 0
+2022-07-22 09:08:48,550 --- INFO: Numer of not-available dates in Juli 2022: 6
+2022-07-22 09:08:48,550 --- INFO: Numer of bookable dates in August 2022: 0
+2022-07-22 09:08:48,551 --- INFO: Numer of not-available dates in August 2022: 23
+2022-07-22 09:08:48,551 --- INFO: Finished running script!
+2022-07-22 09:08:48,551 --- INFO: Started running script!
+2022-07-22 09:08:48,551 --- INFO: Checking appointments in https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister=122274&anliegen[]=120686&herkunft=1
+2022-07-22 09:08:49,476 --- INFO: Checking appointments in https://service.berlin.de/terminvereinbarung/termin/day/1659304800/
+2022-07-22 09:08:50,283 --- INFO: Numer of bookable dates in Juli 2022: 0
+2022-07-22 09:08:50,284 --- INFO: Numer of not-available dates in Juli 2022: 6
+2022-07-22 09:08:50,284 --- INFO: Numer of bookable dates in August 2022: 0
+2022-07-22 09:08:50,284 --- INFO: Numer of not-available dates in August 2022: 23
+2022-07-22 09:08:50,284 --- INFO: Finished running script!
+2022-07-22 09:08:50,284 --- INFO: Started running script!
+2022-07-22 09:08:50,284 --- INFO: Checking appointments in https://service.berlin.de/terminvereinbarung/termin/tag.php?termin=1&dienstleister=327326&anliegen[]=120686&herkunft=1
+2022-07-22 09:08:51,196 --- INFO: Checking appointments in https://service.berlin.de/terminvereinbarung/termin/day/1659304800/
+2022-07-22 09:08:51,973 --- INFO: Numer of bookable dates in Juli 2022: 0
+2022-07-22 09:08:51,973 --- INFO: Numer of not-available dates in Juli 2022: 6
+2022-07-22 09:08:51,973 --- INFO: Numer of bookable dates in August 2022: 0
+2022-07-22 09:08:51,973 --- INFO: Numer of not-available dates in August 2022: 23
+2022-07-22 09:08:51,974 --- INFO: Finished running script!
